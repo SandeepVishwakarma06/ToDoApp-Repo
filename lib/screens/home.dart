@@ -35,6 +35,7 @@ class _ToDoAppState extends State<ToDoApp> {
               horizontal: 20,
               vertical: 15,
             ),
+
             child: Column(
               children: [
                 searchBox(),
@@ -60,6 +61,32 @@ class _ToDoAppState extends State<ToDoApp> {
                 )
               ],
             ),
+
+            // child: Column(
+            //   children: [
+            //     searchBox(),
+            //     Expanded(
+            //       child: ListView(
+            //         children: [
+            //           Container(
+            //             margin: const EdgeInsets.only(top: 50, bottom: 20),
+            //             child: Text(
+            //               "All ToDos",
+            //               style: TextStyle(
+            //                   fontSize: 30, fontWeight: FontWeight.w500),
+            //             ),
+            //           ),
+            //           for (ToDo todo in _foundToDo.reversed)
+            //             ToDoItem(
+            //               todo: todo,
+            //               onToDoChanged: _handleToDoChange,
+            //               onToDoDeletedItem: _onDeletedToDoItem,
+            //             ),
+            //         ],
+            //       ),
+            //     )
+            //   ],
+            // ),
           ),
           Align(
             alignment: Alignment.bottomCenter,
