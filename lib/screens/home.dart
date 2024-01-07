@@ -46,8 +46,8 @@ class _ToDoAppState extends State<ToDoApp> {
                         margin: const EdgeInsets.only(top: 50, bottom: 20),
                         child: Text(
                           "All ToDos",
-                          // style: TextStyle(
-                          //     fontSize: 30, fontWeight: FontWeight.w500),
+                          style: TextStyle(
+                              fontSize: 30, fontWeight: FontWeight.w500),
                         ),
                       ),
                       for (ToDo todo in _foundToDo.reversed)
